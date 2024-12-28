@@ -1,0 +1,52 @@
+.banner {
+  height: 100vh;
+  background-image: url("/php-Workspace/DuAn_WebMonAn_Nhom6/assets/img/1673244660_food-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.banner-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.order-button {
+  background-color: #b72632;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #b72632;
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+}

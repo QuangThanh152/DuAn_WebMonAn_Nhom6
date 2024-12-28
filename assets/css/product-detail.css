@@ -1,0 +1,110 @@
+.product-detail {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-detail-info {
+  width: 50%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb;
+  border-left: 1px solid #ddd;
+}
+
+.product-detail-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-detail-info .product-label {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-detail-info p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.product-detail-info .quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product-detail-info .quantity button,
+.product-detail-info .quantity input {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f9fafb;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-detail-info .quantity button {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #203737;
+}
+
+.product-detail-info .quantity button:hover {
+  background-color: #203737;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-info .quantity input {
+  flex: none;
+}
+
+.product-detail-info button#add-to-cart {
+  padding: 15px 30px;
+  border: none;
+  background-color: #203737;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-detail-info button#add-to-cart:hover {
+  background-color: #3b3a89;
+  transform: scale(1.05);
+}
+
+.product-detail-info button#add-to-cart:hover {
+  background-color: #fff;
+  color: #203737;
+  border: 1px solid #203737;
+  transform: scale(1.05);
+}

@@ -1,0 +1,301 @@
+/* Reset CSS và thiết lập cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Kiểu dáng cho phần đầu (header) */
+.header {
+  background-color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #2f3542;
+  font-style: italic;
+}
+
+.logout-btn {
+  padding: 8px 15px;
+  background-color: transparent;
+  border: none;
+  color: #2f3542;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+/* Kiểu dáng cho thanh bên (sidebar) */
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2f3542;
+  color: white;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  color: #a4b0be;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a i {
+  margin-right: 10px; /* khoảng cách giữa icon và chữ */
+}
+
+.sidebar a:hover {
+  background-color: #3c4454;
+  color: white;
+}
+
+.sidebar a.active {
+  background-color: #3c4454;
+  color: white;
+}
+
+/* Kiểu dáng cho nội dung chính */
+.main-content {
+  /* flex: 1; */
+  display: flex;
+  /* flex-direction: column; */
+  background-color: #f0f0f0;
+}
+
+/* Kiểu dáng cho dashboard (trang chủ) */
+.dashboard {
+  padding: 30px;
+}
+
+.welcome-message {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  margin-bottom: 10px;
+}
+
+.stat-card .number {
+  font-size: 32px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Kiểu dáng cho container nội dung */
+.content-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+/* Kiểu dáng cho form */
+.menu-form {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea.form-control {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Kiểu dáng cho công tắc (switch) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Kiểu dáng cho các nút */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Kiểu dáng cho bảng */
+.menu-table {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+.menu-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+/* Kiểu dáng cho footer của form */
+.form-footer {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Kiểu dáng cho hiển thị/ẩn nội dung */
+#menuContent {
+  display: none;
+}
+
+#menuContent.active {
+  display: block;
+}
+
+#homeContent.active {
+  display: block;
+}
+
+#homeContent {
+  display: none;
+}

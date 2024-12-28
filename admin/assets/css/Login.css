@@ -1,0 +1,163 @@
+/* Đặt lại một số mặc định */
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../downloaded/wallpaper.jpg"); /* Đường dẫn tương đối tới ảnh nền */
+  background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ màn hình */
+  background-position: center; /* Đảm bảo ảnh nằm ở vị trí trung tâm */
+  background-repeat: no-repeat; /* Đảm bảo ảnh không lặp lại */
+  background-attachment: fixed; /* Đảm bảo ảnh nền không cuộn theo nội dung */
+  background-color: #f0f0f0;
+  font-family: "Arial", sans-serif; /* Thêm phông chữ đẹp */
+}
+
+/* Login */
+.login-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: auto; /* Căn giữa */
+  background-color: #ffffff;
+}
+
+/* Tiêu đề */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Các nhóm form */
+.login-container .form-group {
+  margin-bottom: 20px;
+}
+
+/* Nhãn */
+.login-container .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Input */
+.login-container .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động khi focus */
+}
+
+/* Hiệu ứng focus và hover cho input */
+.login-container .form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Tạo bóng khi focus */
+  outline: none;
+}
+
+/* Button */
+.login-container .btn {
+  display: inline-block;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động khi hover */
+}
+
+/* Hiệu ứng hover cho button */
+.login-container .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Hiệu ứng nổi lên khi hover */
+}
+
+/* Cảnh báo lỗi */
+.login-container .alert {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Cảnh báo lỗi đỏ */
+.login-container .alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* Các yếu tố nhỏ thêm */
+.login-container .form-group input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Thông báo kiểu toast */
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 300px;
+}
+
+.toast {
+  background-color: #f44336; /* Mặc định là màu đỏ */
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  animation: slideIn 0.5s ease-in-out, fadeOut 0.5s 3s ease-in-out forwards;
+}
+
+.toast-success {
+  background-color: #4caf50; /* Màu xanh cho thành công */
+}
+
+.toast-warning {
+  background-color: #ff9800; /* Màu cam cho cảnh báo */
+}
+
+.toast-error {
+  background-color: #f44336; /* Màu đỏ cho lỗi */
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
