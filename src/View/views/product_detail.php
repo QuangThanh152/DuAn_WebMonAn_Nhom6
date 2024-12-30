@@ -4,7 +4,7 @@
     <div class="product-detail-info">
         <h1><?php echo htmlspecialchars($product['name'], ENT_QUOTES, 'UTF-8'); ?></h1>
         <p class="product-label">Loại:</p>
-        <p><?php echo htmlspecialchars($product['category_id'], ENT_QUOTES, 'UTF-8'); ?></p>
+        <p><?php echo htmlspecialchars($product['category_name'], ENT_QUOTES, 'UTF-8'); ?></p>
         <p class="product-label">Mô tả:</p>
         <p><?php echo htmlspecialchars($product['description'], ENT_QUOTES, 'UTF-8'); ?></p>
         <p class="product-label">Giá:</p>
